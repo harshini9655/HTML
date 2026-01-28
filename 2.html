@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Courses</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 15px 60px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c7be5;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2c7be5;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            background: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #6abf69;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #58a857;
+        }
+
+        /* ================= COURSES ================= */
+        section {
+            padding: 70px 60px;
+            background: #ffffff;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .course-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card h3 {
+            margin: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .course-card p {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        .course-card a {
+            text-decoration: none;
+            color: #2c7be5;
+            font-weight: 600;
+        }
+
+        /* ================= FEATURES ================= */
+        .features {
+            background: #f9fafb;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* ================= ABOUT ================= */
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* ================= CONTACT ================= */
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #6abf69;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #58a857;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: #ffffff;
+            padding: 25px;
+            text-align: center;
+            font-size: 14px;
+            color: #6b7280;
+            margin-top: 20px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            section {
+                padding: 50px 20px;
+            }
+
+            .contact {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">IT Courses</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Professional IT Courses</h1>
+    <p>Learn the latest IT skills online</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Our Courses</h2>
+        <p>Choose from our popular IT programs</p>
+    </div>
+
+    <div class="course-grid">
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, and responsive design.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Data Science</h3>
+            <p>Analyze data and build insights.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Cybersecurity</h3>
+            <p>Protect systems and networks.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Cloud Computing</h3>
+            <p>Master cloud technologies.</p>
+            <a href="#">Learn More →</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="section-title">
+        <h2>Why Choose Us</h2>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-box">Expert Trainers</div>
+        <div class="feature-box">Flexible Learning</div>
+        <div class="feature-box">Industry Projects</div>
+        <div class="feature-box">Certification</div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>About Us</h2>
+    </div>
+
+    <div class="about">
+        <p>
+            We are an online learning platform dedicated to providing high-quality IT training.
+            Our courses are designed to help learners build real-world skills and advance their careers.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact">
+        <div>
+            <p>
+                Have questions? Reach out to us using the form.
+                We will get back to you as soon as possible.
+            </p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2024 IT Courses. All rights reserved.
+</footer>
+
+</body>
+</html>
