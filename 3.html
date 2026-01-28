@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4CAF50, #4A90E2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form Card */
+        .form-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 500px;
+            padding: 35px 40px;
+            border-radius: 4px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-container h2 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #222;
+            letter-spacing: 1px;
+        }
+
+        /* Form Layout */
+        .row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .row input {
+            width: 100%;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: none;
+            background: #f2f2f2;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        input:focus, textarea:focus {
+            outline: 2px solid #4A90E2;
+            background: #ffffff;
+        }
+
+        /* Submit Button */
+        .btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 30px;
+            background: linear-gradient(to right, #4A90E2, #4CAF50);
+            border: none;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Phone text */
+        .phone {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .form-container {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="form-container">
+            <h2>GET IN TOUCH</h2>
+
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <input type="text" placeholder="http://" style="margin-bottom: 15px;">
+
+                <textarea placeholder="Your message here..."></textarea>
+
+                <button type="submit" class="btn">SUBMIT</button>
+            </form>
+        </div>
+
+        <div class="phone">
+            Call us on +001 345 678
+        </div>
+    </div>
+
+</body>
+</html>
