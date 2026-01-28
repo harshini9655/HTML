@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navigation Page</title>
+
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Page background */
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #3bb3d6, #3ec7a4, #7b5ce6);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* Navigation container */
+        .nav-container {
+            margin-top: 40px;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* Navigation links */
+        .navbar a {
+            padding: 10px 30px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Active menu item */
+        .navbar a.active {
+            background-color: #ffffff;
+            color: #3bb3d6;
+        }
+
+        /* Hover effect */
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Responsive adjustment */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                text-align: center;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Store</a>
+        </nav>
+    </div>
+
+</body>
+</html>
